@@ -10,6 +10,7 @@
 		52CD544920EE1DC80061C8A7 /* VedasRandomGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CD543F20EE1DC80061C8A7 /* VedasRandomGenerator.framework */; };
 		52CD544E20EE1DC80061C8A7 /* VedasRandomGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD544D20EE1DC80061C8A7 /* VedasRandomGeneratorTests.swift */; };
 		52CD545020EE1DC80061C8A7 /* VedasRandomGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 52CD544220EE1DC80061C8A7 /* VedasRandomGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52CD54A320EE22D20061C8A7 /* RandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD54A220EE22D20061C8A7 /* RandomGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		52CD544820EE1DC80061C8A7 /* VedasRandomGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VedasRandomGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CD544D20EE1DC80061C8A7 /* VedasRandomGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VedasRandomGeneratorTests.swift; sourceTree = "<group>"; };
 		52CD544F20EE1DC80061C8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52CD54A220EE22D20061C8A7 /* RandomGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RandomGenerator.swift; path = ../../VedasRandomProject/VedasRandomProject/RandomGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				52CD544220EE1DC80061C8A7 /* VedasRandomGenerator.h */,
+				52CD54A220EE22D20061C8A7 /* RandomGenerator.swift */,
 				52CD544320EE1DC80061C8A7 /* Info.plist */,
 			);
 			path = VedasRandomGenerator;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					52CD543E20EE1DC80061C8A7 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					52CD544720EE1DC80061C8A7 = {
 						CreatedOnToolsVersion = 9.3;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52CD54A320EE22D20061C8A7 /* RandomGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +344,7 @@
 		52CD545420EE1DC80061C8A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vedaslabs.VedasRandomGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		52CD545520EE1DC80061C8A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		52CD545720EE1DC80061C8A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ETJQSHNP5L;
 				INFOPLIST_FILE = VedasRandomGeneratorTests/Info.plist;
@@ -407,6 +416,7 @@
 		52CD545820EE1DC80061C8A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ETJQSHNP5L;
 				INFOPLIST_FILE = VedasRandomGeneratorTests/Info.plist;
